@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        fieldset{
+            margin: 1rem 0;
+            padding: 1rem;
+            border: 1px solid rgb(207, 164, 164);
+            background-color: #88d3c9;
+        }
+
+        legend{
+           font-weight: bold;
+        }
+
+        label{
+            display: block;
+        }
+        label{
+            display: block;
+            cursor: pointer;
+        }
+
+         /* input[type="radio"]{
+           width: 50rem;
+       } */
+       template{
+           width: 20rem;
+           height: 10rem;
+           resize: none;
+       }
+       input.radio, input.text, input.checkbox, input.submit{
+           width: auto;
+       }
+
+    </style>
+   
+</head>
+<body>
+    <h3>Estilizando formularios</h3>
+    <form>
+        <fieldset>
+            <legend>Detalhes do Usuario</legend>
+            <div>
+                <label for="nome">nome:</label>
+                <input type="text" nome="" id="nome">
+                </div>
+
+                <div>
+                    <label for="E-mail">E-mail:</label>
+                    <input type="text" nome="" id="E-mail">
+                    </div>
+
+                    <div>
+                        <label for="url">Url:</label>
+                        <input type="text" nome="" id="url">
+                        </div>
+        </fieldset>
+
+        <fieldset>
+             <legend>Comentarios</legend>
+             <div>
+                 <label for="Mensagens">Mensagens</label>
+                 <textarea name="Mensagens" id="Mensagens" cols="30" rows="10"></textarea>
+             </div>
+        </fieldset>
+        <!--SEPARAÇÃO DO FIELDSET-->
+        <fieldset>
+         <legend>Lembra de mim</legend>
+         <div>
+             <label>
+                 <input type="radio" name="lembrar" id="sim">Sim 
+             </label>
+         </div>
+
+         <div>
+            <label>
+                <input type="radio" name="lembrar" id="sim">Não
+            </label>
+        </div>
+        </fieldset>
+       
+    </form>
+</body>
+</html>
